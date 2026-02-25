@@ -26,10 +26,10 @@ If you’re searching for **agentic AI architectures**, **LangGraph production p
 
 ### Autonomous Onboarding Agent (Vision + Web Browsing)
 
-- **Context**: At Coinbase, onboarding internal users onto complex tooling and workflows was consuming a significant amount of high-leverage engineering time.
-- **Role**: As part of an internal **AI Tiger Team**, I architected and led the development of an **autonomous onboarding agent** that combines vision (UI understanding) with web-browsing capabilities to navigate real internal tools end-to-end.
+- **Context**: At Coinbase, onboarding customers was a time intensive process.
+- **Role**: As part of an internal **AI Tiger Team**, I architected and led the development of an **autonomous onboarding agent** that combines vision (UI understanding) with web-browsing capabilities to navigate expedite customer onboarding.
 - **Architecture**: Multi-agent **LangGraph** orchestration, **LangSmith**-driven observability, tool-augmented browsing, and policy-guarded actions. Integrated with internal services via **Kafka**, **Golang**, and **Python** microservices, with **Postgres** for state and checkpointing.
-- **Impact**: The agent guides employees through bespoke workflows, handles edge cases, and escalates when appropriate—**saving hundreds of hours monthly** and standardizing knowledge that used to live only in people’s heads.
+- **Impact**: The agent's findings and results **saves hundreds of hours monthly**.
 - **Keywords**: autonomous AI agents, enterprise AI agents, AI agent building, LangGraph in production, agentic workflows, observability-first design.
 
 ---
