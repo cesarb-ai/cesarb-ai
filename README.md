@@ -63,7 +63,7 @@ I specialize in turning research-grade ideas into **production-grade autonomous 
 
 ---
 
-## 🎙 Writing, Talks & Social Proof
+## 🎙 Community Highlights
 
 - **Coinbase Engineering Blog** – Writing on **AI agent building**, **enterprise RAG**, and **productionizing LangGraph-based systems**.  
   👉 [Building Enterprise AI Agents at Coinbase](https://www.coinbase.com/blog/building-enterprise-AI-agents-at-Coinbase)
