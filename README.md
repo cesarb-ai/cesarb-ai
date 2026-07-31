@@ -12,10 +12,11 @@ Senior AI Engineer at Coinbase. I design and ship LangGraph and Claude Agent SDK
 
 ### Autonomous Onboarding Agent (Vision + Web Browsing)
 
-- **Context**: At Coinbase, customer onboarding was time-intensive and brittle across real product UIs.
-- **Role**: As part of the internal [AI Tiger Team](https://www.coinbase.com/blog/building-enterprise-AI-agents-at-Coinbase), I architected and led an **autonomous onboarding agent** that combines vision (UI understanding) with web-browsing to navigate and complete onboarding workflows.
-- **Architecture**: Multi-agent **LangGraph** orchestration, **LangSmith** observability, tool-augmented browsing, and policy-guarded actions — integrated via **Kafka**, **Golang**, and **Python** services, with **Postgres** for state and checkpointing.
-- **Impact**: Findings and results save hundreds of hours monthly.
+- **Context**: At Coinbase, onboarding customers was a time intensive process.
+- **Role**: As part of an internal **AI Tiger Team**, I architected and led the development of an **autonomous onboarding agent** that combines vision (UI understanding) with web-browsing capabilities to navigate expedite customer onboarding.
+- **Architecture**: Multi-agent **LangGraph** orchestration, **LangSmith**-driven observability, tool-augmented browsing, and policy-guarded actions. Integrated with internal services via **Kafka**, **Golang**, and **Python** microservices, with **Postgres** for state and checkpointing.
+- **Impact**: The agent's findings and results **saves hundreds of hours monthly**.
+- **Keywords**: autonomous AI agents, enterprise AI agents, AI agent building, LangGraph in production, agentic workflows, observability-first design.
 
 ### Docs-Quality Agent (Claude Agent SDK)
 
@@ -24,12 +25,16 @@ Senior AI Engineer at Coinbase. I design and ship LangGraph and Claude Agent SDK
 - **Architecture**: Sandboxed docs execution → drift detection → automatic **Linear** issues and **GitHub PRs** that remediate the drift.
 - **Why it matters**: Treats docs as executable contracts, not static pages — with the same service discipline as production agents (sandboxing, evals, actionable remediation).
 
-### Enterprise KB Engine & RAG Playground
+### Enterprise KB Engine & RAG Playground (Knowledge Base Engine)
 
 - **Context**: Teams needed a reliable way to prototype and harden **RAG pipelines** over heterogeneous, evolving knowledge bases (docs, wikis, tickets, code, internal tools).
-- **Role**: Designed and built a **Knowledge Base Engine (KB Engine)** and public **[KB Engine Playground](https://github.com/cesarb-ai/kb_engine_playground)** for standing up, iterating on, and evaluating production-ready RAG pipelines.
-- **Architecture**: Config-driven ingestion (**Fetch → Parse → Chunk → Embed**), vector + symbolic retrieval, pluggable rerankers, and **LangGraph** flows for multi-hop queries — backed by **Postgres/pgvector**, with **Kubernetes** scheduled jobs and chart-driven configs.
-- **Impact**: Faster RAG iteration, objective retrieval evaluation, and a clearer path from playground experiments into hardened enterprise RAG services.
+- **Role**: I designed and built a **Knowledge Base Engine (KB Engine)** and public **KB Engine Playground** that make it easy to stand up, iterate on, and evaluate production-ready RAG pipelines.
+- **Architecture**: Config-driven ingestion graph that automates **Fetch → Parse → Chunk → Embed**, combining **vector + symbolic retrieval**, pluggable rerankers, and **LangGraph-based flows** for complex multi-hop queries. Backed by **Postgres/pgvector**, orchestrated via **Kubernetes** scheduled jobs and chart-driven configs.
+- **Impact**: Enabled rapid iteration on RAG strategies, objective evaluation of retrieval performance, and smoother promotion from “playground” experiments into hardened **enterprise RAG services**.
+- **Links**:
+  - **KB Engine Playground (GitHub)**: [`github.com/cesarb-ai/kb_engine_playground`](https://github.com/cesarb-ai/kb_engine_playground)
+  - **Repo in this workspace**: `./kb_engine_playground`
+- **Keywords**: enterprise RAG, knowledge base engine, automated RAG pipelines, pgvector, LangGraph RAG, retrieval evaluation, knowledge management.
 
 ---
 
