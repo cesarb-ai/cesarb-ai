@@ -8,14 +8,32 @@ Senior AI Engineer at Coinbase. I design and ship LangGraph and Claude Agent SDK
 
 ---
 
-## What I build
+## Featured Production Systems
 
-| Focus | Proof |
-| --- | --- |
-| Production LangGraph agents | Coinbase [AI Tiger Team](https://www.coinbase.com/blog/building-enterprise-AI-agents-at-Coinbase); CDP AI Support (LangChain Interrupt) |
-| Claude Agent SDK | Docs-quality agent (teaser): sandbox docs → detect drift → Linear + GitHub PRs |
-| Enterprise RAG | Postgres/pgvector, eval loops, K8s — see [kb_engine_playground](https://github.com/cesarb-ai/kb_engine_playground) |
-| Local↔production evals | Mac Mini + [DGX Spark](https://github.com/cesarb-ai/dgx-spark-cluster-compass) vs LangSmith production traces |
+### Autonomous Onboarding Agent (Vision + Web Browsing)
+
+- **Context**: At Coinbase, customer onboarding was time-intensive and brittle across real product UIs.
+- **Role**: As part of the internal [AI Tiger Team](https://www.coinbase.com/blog/building-enterprise-AI-agents-at-Coinbase), I architected and led an **autonomous onboarding agent** that combines vision (UI understanding) with web-browsing to navigate and complete onboarding workflows.
+- **Architecture**: Multi-agent **LangGraph** orchestration, **LangSmith** observability, tool-augmented browsing, and policy-guarded actions — integrated via **Kafka**, **Golang**, and **Python** services, with **Postgres** for state and checkpointing.
+- **Impact**: Findings and results save hundreds of hours monthly.
+
+### Docs-Quality Agent (Claude Agent SDK)
+
+- **Context**: Developer docs drift from reality — examples break, commands rot, and support burden grows.
+- **Role**: Built a **secure docs-quality agent** on the **Claude Agent SDK** that reads developer documentation and **runs it in a sandbox the way a developer would**, to catch docs drift before customers hit it.
+- **Architecture**: Sandboxed docs execution → drift detection → automatic **Linear** issues and **GitHub PRs** that remediate the drift.
+- **Why it matters**: Treats docs as executable contracts, not static pages — with the same service discipline as production agents (sandboxing, evals, actionable remediation).
+
+### Enterprise KB Engine & RAG Playground
+
+- **Context**: Teams needed a reliable way to prototype and harden **RAG pipelines** over heterogeneous, evolving knowledge bases (docs, wikis, tickets, code, internal tools).
+- **Role**: Designed and built a **Knowledge Base Engine (KB Engine)** and public **[KB Engine Playground](https://github.com/cesarb-ai/kb_engine_playground)** for standing up, iterating on, and evaluating production-ready RAG pipelines.
+- **Architecture**: Config-driven ingestion (**Fetch → Parse → Chunk → Embed**), vector + symbolic retrieval, pluggable rerankers, and **LangGraph** flows for multi-hop queries — backed by **Postgres/pgvector**, with **Kubernetes** scheduled jobs and chart-driven configs.
+- **Impact**: Faster RAG iteration, objective retrieval evaluation, and a clearer path from playground experiments into hardened enterprise RAG services.
+
+---
+
+**Also:** local↔production eval loops (Mac Mini + [DGX Spark](https://github.com/cesarb-ai/dgx-spark-cluster-compass) vs LangSmith production traces) · CDP AI Support (LangChain Interrupt)
 
 **Stack:** LangGraph · Claude Agent SDK · LangChain · LangSmith · Postgres/pgvector · Kafka · Golang · Python · K8s · evals / observability
 
@@ -30,6 +48,6 @@ Senior AI Engineer at Coinbase. I design and ship LangGraph and Claude Agent SDK
 
 ## Pin these
 
-1. This profile README  
-2. `dgx-spark-cluster-compass`  
+1. This profile README
+2. `dgx-spark-cluster-compass`
 3. `kb_engine_playground`
