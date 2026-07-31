@@ -48,11 +48,3 @@ Senior AI Engineer at Coinbase. I design and ship LangGraph and Claude Agent SDK
 
 - **Staff / Principal AI Engineer** (full-time) — primary
 - Select advisory / fractional on production agents
-
----
-
-## Pin these
-
-1. This profile README
-2. `dgx-spark-cluster-compass`
-3. `kb_engine_playground`
