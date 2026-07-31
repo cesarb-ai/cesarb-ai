@@ -2,9 +2,9 @@
 
 **Production agents that survive on-call.**
 
-I design and ship **LangGraph** and **Claude Agent SDK** systems — checkpointing, evals, sandbox tooling — so agents run like services, not demos.
+Senior AI Engineer at Coinbase. I design and ship LangGraph and Claude Agent SDK systems — checkpointing, evals, sandbox tooling — so agents run like services, not demos.
 
-**Site:** [cesarb.ai](https://www.cesarb.ai) · **Work:** [cesarb.ai/projects](https://www.cesarb.ai/projects) · **LinkedIn:** [longlivecesar](https://www.linkedin.com/in/longlivecesar/)
+**Site:** [cesarb.ai](https://www.cesarb.ai) · **Projects:** [cesarb.ai/projects](https://www.cesarb.ai/projects) · **LinkedIn:** [longlivecesar](https://www.linkedin.com/in/longlivecesar/)
 
 ---
 
@@ -17,7 +17,7 @@ I design and ship **LangGraph** and **Claude Agent SDK** systems — checkpointi
 | Enterprise RAG | Postgres/pgvector, eval loops, K8s — see [kb_engine_playground](https://github.com/cesarb-ai/kb_engine_playground) |
 | Local↔production evals | Mac Mini + [DGX Spark](https://github.com/cesarb-ai/dgx-spark-cluster-compass) vs LangSmith production traces |
 
-**Stack:** LangGraph · Claude Agent SDK · LangChain · LangSmith · Postgres/pgvector · Kafka · Golang · Python · K8s
+**Stack:** LangGraph · Claude Agent SDK · LangChain · LangSmith · Postgres/pgvector · Kafka · Golang · Python · K8s · evals / observability
 
 ---
 
