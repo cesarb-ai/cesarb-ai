@@ -1,4 +1,4 @@
-# Cesar B — Senior AI Engineer @ Coinbase
+# Cesar Bohorquez - AI Engineer
 
 **Production agents that survive on-call.**
 
